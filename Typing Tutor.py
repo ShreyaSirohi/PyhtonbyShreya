@@ -1,6 +1,6 @@
 from timeit import default_timer as timer
 
-words = 'the quick brown sly fox jumps over the lazy dog'
+words = 'the quick brown fox jumps over the lazy fat dog'
 print("this is what you have to type:", "'", words, "'")
 ask = input("when ready to start press,'y':")
 
