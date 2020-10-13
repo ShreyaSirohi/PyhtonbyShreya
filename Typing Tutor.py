@@ -1,14 +1,14 @@
 from timeit import default_timer as timer
 
 words = 'the quick brown fox jumps over the lazy fat dog'
-print("this is what you have to type:", "'", words, "'")
-ask = input("when ready to start press,'y':")
+print("This is what you have to type:", "'", words, "'")
+ask = input("When ready to start press,'y':")
 
 if ask == 'y':
     start = timer()
     test = input('start typing:')
 
-sure = input('when ready to submit, press s:')
+sure = input("When ready to submit, press 's'':")
 
 a = words.split()
 b = test.split()
@@ -16,18 +16,18 @@ b = test.split()
 if sure == 's':
     if words == test:
         end = timer()
-        print('seconds', end - start)
+        print('Seconds', end - start)
 
     else:
         end = timer()
-        print('you hav entered the wrong word')
-        print('seconds', end - start)
+        print('You have entered the wrong word!!!')
+        print('Seconds', end - start)
 
 
 def calculate(a, b):
     x = a / b
     y = x * 60
-    print('words per minute:', y)
+    print('Words per minute:', y)
 
 
 calculate(len(b), end - start)
