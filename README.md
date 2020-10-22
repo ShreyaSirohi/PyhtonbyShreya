@@ -3,4 +3,4 @@ This repository contains all the programs that have been created by Shreya Siroh
 Shreya Sirohi
 Class 7th (as of 2020)
 Absolute Beginner in Programming
-Learning GUI Development in Python
+
