@@ -13,7 +13,6 @@ class Library:
         a = 1
         while a == 1:
             ask = input("What do you wanna do...'i' issue book, 'r' return book, 'g' give a book to library, 'd' delete a book")
-            a += 1
             if ask == 'i':
                 self.issuebook()
             elif ask == 'r':
