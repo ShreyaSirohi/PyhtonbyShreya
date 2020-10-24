@@ -10,8 +10,8 @@ class Library:
         print(f"Welcome to {self.name}'s Library...We have the following books in our library {self.books}")
 
     def actiontoperform(self):
-        a = 0
-        while a <= 1000:
+        a = 1
+        while a == 1:
             ask = input("What do you wanna do...'i' issue book, 'r' return book, 'g' give a book to library, 'd' delete a book")
             a += 1
             if ask == 'i':
