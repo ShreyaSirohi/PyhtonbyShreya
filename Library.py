@@ -8,6 +8,8 @@ class Library:
 
     def displaybooks(self):
         print(f"Welcome to {self.name}'s Library...We have the following books in our library {self.books}")
+        for i in self.books:
+            print(i)
 
     def actiontoperform(self):
         a = 1
