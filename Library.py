@@ -66,6 +66,6 @@ class Library:
 
 
 Shreya = Library(['A Christmas Carol', 'Oliver Twist', 'The Secret Garden',
-                  'Great Expectations', 'Harry Potter', 'Sherlock Holmes', 'A Tale of Two Cities'], 'Shreya')
+                  'Great Expectations', 'Harry Potter', 'Sherlock Holmes', 'A Tale of Two Cities'], "Shreya Sirohi's Library")
 Shreya.displaybooks()
 Shreya.actiontoperform()
