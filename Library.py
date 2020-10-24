@@ -7,7 +7,7 @@ class Library:
         self.secretkey = 'hi hello'
 
     def displaybooks(self):
-        print(f"Welcome to {self.name}'s Library...We have the following books in our library {self.books}")
+        print(f"Welcome to {self.name}'s Library...We have the following {len(self.books)} books in our library {self.books}")
         for i in self.books:
             print(i)
 
