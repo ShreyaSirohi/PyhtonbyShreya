@@ -1,20 +1,29 @@
 class Library:
 
-    def __init__(self, books, name):
+    def __init__(self, books, author, name):
         self.books = books
+        self.author = author
         self.name = name
         self.booksdata = {}
-        self.secretkey = 'hi hello'
+        self.secretkey1 = 'hi hello'
+        self.secretkey2 = 'it is a secret'
 
     def displaybooks(self):
         print(f"Welcome to {self.name}... We have the following {len(self.books)} books in our library:")
-        for i in self.books:
-            print(i)
+
+        a = 0
+        while a <= len(self.books) - 1:
+            print(f"{a + 1}: {self.books[a]} by {self.author[a]}")
+            a += 1
+
+        # for i in self.books:
+        #    print(i)
 
     def actiontoperform(self):
         a = 1
         while a == 1:
-            ask = input("What do you wanna do...'i' issue book, 'r' return book, 'g' give a book to library, 'd' delete a book")
+            ask = input(
+                "What do you wanna do...'i' Issue book, 'r' Return book, 'g' Give a book to library, 'd' Delete a book, 'b' Book-User Database:")
             if ask == 'i':
                 self.issuebook()
             elif ask == 'r':
@@ -23,6 +32,8 @@ class Library:
                 self.givebook()
             elif ask == 'd':
                 self.deletebook()
+            elif ask == 'b':
+                self.userbookinfo()
 
     def issuebook(self):
         username = input('Enter your name:')
@@ -57,15 +68,25 @@ class Library:
         if ask == 'y':
             name = input("Enter your name")
             askkey = input('enter the secret key')
-            if askkey == self.secretkey:
+            if askkey == self.secretkey1:
                 bookname = input('name the book')
                 self.books.remove(bookname)
                 print(self.books)
             else:
                 print('wrong key')
 
+    def userbookinfo(self):
+        askkey = input('enter the secret key')
+        if askkey == self.secretkey2:
+            print(self.booksdata)
+        else:
+            print('wrong key')
+
 
 Shreya = Library(['A Christmas Carol', 'Oliver Twist', 'The Secret Garden',
-                  'Great Expectations', 'Harry Potter', 'Sherlock Holmes', 'A Tale of Two Cities'], "Shreya Sirohi's Library")
+                  'Great Expectations', 'Harry Potter', 'Sherlock Holmes', 'A Tale of Two Cities'],
+                 ['Charles Dickens', 'Charles Dickens', 'Frances Hodgson Burnett', 'Charles Dickens', 'J. K. Rowling',
+                  'Sir Aurther Conan Doyale', 'Charles Dickens'], "Shreya's Library")
+
 Shreya.displaybooks()
 Shreya.actiontoperform()
