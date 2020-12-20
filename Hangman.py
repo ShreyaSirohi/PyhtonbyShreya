@@ -1,6 +1,6 @@
 from random import choice
 
-wordlist = ['python', 'computer', 'butterfly', 'money', 'molecule', 'geometry']
+wordlist = ['python', 'computer', 'rainbow', 'money', 'molecule', 'geometry']
 word = choice(wordlist)
 turns = len(word)*2
 guesses = []
