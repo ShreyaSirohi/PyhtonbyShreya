@@ -25,7 +25,7 @@ while turns >= 0:
         print(f"You Win!!! \nthe Word is '{word}'")
         break
     elif turns == 0:
-        print('You Lose... :(')
+        print(f"You Lose... :( \nthe Word is '{word}'")
 
     if ask not in word:
         print('Wrong!', 'You have', turns, 'turns left.')
